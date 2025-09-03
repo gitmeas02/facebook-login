@@ -1,8 +1,26 @@
+<template>
+  <div id="app">
+    <router-view />
+  </div>
+</template>
+
 <script setup>
-import FacebookLoginButton from './Components/FacebookLoginButton.vue';
+// Router view will handle all the routing
 </script>
 
-<template>
-  <h1>Hello World</h1>
-  <FacebookLoginButton />
-</template>
+<style>
+#app {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
