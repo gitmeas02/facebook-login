@@ -20,7 +20,8 @@
     <div v-else>
       <p class="mt-4">Welcome, {{ user.name || 'User' }}</p>
       <img
-        :src="user.picture.data.url"
+        v-if="user.profilePicture"
+        :src="user.profilePicture"
         class="rounded-full mt-2 w-16 h-16"
         alt="Profile picture"
       />
